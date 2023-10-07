@@ -48,7 +48,8 @@ impl From<&str> for Person {
             return Person::default();
         }
         let v: Vec<&str> = s.split(',').collect();
-        if v.len() != 2 {
+        eprintln!("{:?}", v);
+        if v.len() < 2 {
             return Person::default()
         }
         let name = String::from(v[0]);

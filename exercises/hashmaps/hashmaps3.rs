@@ -53,7 +53,6 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
                 Vacant(e) => {
                     let name = e.key().to_owned();
                     e.insert(Team {
-                        name,
                         goals_scored: scored,
                         goals_conceded: conceded,
                     });
