@@ -1,5 +1,7 @@
 // options1.rs
-// Execute `rustlings hint options1` or use the `hint` watch subcommand for a hint.
+//
+// Execute `rustlings hint options1` or use the `hint` watch subcommand for a
+// hint.
 
 // I AM DONE
 
@@ -34,7 +36,8 @@ mod tests {
 
     #[test]
     fn raw_value() {
-        // Fix this test. How do you get at the value contained in the Option?
+        // Fix this test. How do you get at the value contained in the
+        // Option?
         let icecreams = maybe_icecream(12);
         assert_eq!(icecreams.unwrap_or_default(), 5);
     }
